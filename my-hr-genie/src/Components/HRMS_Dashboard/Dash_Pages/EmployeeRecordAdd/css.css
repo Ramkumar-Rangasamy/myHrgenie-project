@@ -1,0 +1,74 @@
+.title-form-emp-radd {
+    color: #2a2a74;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .emp-radd-label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .mp-all-scroll-slection input,.form-control{
+      border: 2px solid #2E37A41A;
+      outline: none;
+  }
+  
+  .css-13cymwt-control {
+      border: 2px solid #2E37A41A !important;
+      border-radius: .25rem !important
+  }
+  
+  
+  .btn-save-record-container{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+  }
+  
+  .select-box-arrow-icon-head{
+      position: relative;
+      display: inline-block;
+  }
+  
+  .css-4ljt47-MenuList::-webkit-scrollbar {
+      display: none; /* ✅ Hides scrollbar (Chrome, Safari) */
+  }
+    
+  .css-26l3qy-menu {
+    scrollbar-width: none !important; /* ✅ Hides scrollbar (Firefox) */
+    -ms-overflow-style: none !important; /* ✅ Hides scrollbar (IE/Edge) */
+  }
+    
+    
+  
+  .select-box-arrow-icon-head .select-box-arrow-icon-input {
+      -webkit-appearance: none; /* For Chrome */
+      -moz-appearance: none; /* For Firefox */
+      appearance: none; /* For modern browsers */
+      outline: none;
+      cursor: pointer;
+  
+  }
+  
+  .select-box-arrow-icon-head  .select-box-arrow-icon {
+      position: absolute;
+      top: 45%;
+      right: 35px;
+      transform: translateY(50%);
+      font-size: 20px;
+      pointer-events: none;
+  }
+  
+  .btn-save-record{
+    width: 150px;
+    background: #2A2A74;
+    color: white;
+    font-weight: 600;
+    border:none ;
+  }
+  
+  .btn-save-record:hover{
+      margin-right: 5px;
+      border:1.5px solid #2A2A74;
+      background:none ;
+      color: #2A2A74;
+  }
