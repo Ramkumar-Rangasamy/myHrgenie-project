@@ -10,7 +10,7 @@ const Dash_Layouts = () => {
     <div className="hrms-dashboard-container">
       <Dash_Sidebar setHeaderTitle={setHeaderTitle} />
       <div className="hrms-layout-dashboard-main-content">
-      <Dash_Header headerTitle={headerTitle} />
+        <Dash_Header headerTitle={headerTitle} />
         <div className="hrms-layout-dashboard-content-area">
           <Outlet /> {/* Dynamic content from nested routes */}
         </div>

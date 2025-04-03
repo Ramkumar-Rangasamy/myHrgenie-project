@@ -9,16 +9,10 @@ import { RiFileList3Fill } from "react-icons/ri";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { SiAnswer } from "react-icons/si";
 import { BiSolidCalendarEvent } from "react-icons/bi";
-import { FaCalendarDays } from "react-icons/fa6";
 import { GoPlus } from "react-icons/go";
 import {  FaTimes } from "react-icons/fa";
 import { BiSolidParty } from "react-icons/bi";
 import { HiMiniUsers } from "react-icons/hi2";
-
-//using in dayjs and daypicker calender here ...
-import dayjs from "dayjs";
-import { DayPicker } from "react-day-picker";
-import "react-day-picker/dist/style.css";
 
 const Dash_Main = () => {
   const [isPaused, setIsPaused] = useState(false);
@@ -39,8 +33,6 @@ const Dash_Main = () => {
 
     cloneContent();
   }, []);
-  
-  const [selectedDay, setSelectedDay] = useState(new Date());
 
   const [tasks, setTasks] = useState([
     { id: 1, title: "Design UI", description: "Create wireframes for dashboard" },
@@ -144,9 +136,10 @@ const Dash_Main = () => {
 
           {/* Popup Modal */}
           {showPopup && (
-            <div className="modal-overlay">
-              <div className="modal">
-                <div className="modal-header">
+            <div className="mp-active-add-new-task-modal-overlay">
+              <div className="mp-active-add-new-task-modal">
+                
+                <div className="mp-active-add-new-task-modal-header">
                   <h3>Add New Task</h3>
                   <button className="close-btn" onClick={() => setShowPopup(false)}>
                     <FaTimes />
@@ -229,23 +222,6 @@ const Dash_Main = () => {
             </div>
           </div>
 
-          {/* Attendance */}
-          <div className="mp-contents-all-activities-card">
-            <div className="mp-all-activities-heading-icons">
-              <span><FaCalendarDays size="1.5rem"/></span> 
-              <h2>Attendance</h2>
-            </div>
-              <div className="calendar-container">
-                <DayPicker
-                  mode="single"
-                  selected={selectedDay}
-                  onSelect={setSelectedDay}
-                  showOutsideDays
-                  fixedWeeks
-                  className="custom-day-picker"
-                />
-              </div>
-          </div>
         </div>
       </div>  
     </div>

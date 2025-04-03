@@ -209,6 +209,10 @@ const EmployeeForm = () => {
               />
             </div>
 
+
+
+            
+
             <div className="form-group select-box-arrow-icon-head col-md-4  px-4">
               <label className="emp-radd-label">Gender:</label>
               <select
@@ -225,6 +229,13 @@ const EmployeeForm = () => {
               <RiArrowDownSLine className="select-box-arrow-icon" />
             </div>
           </div>
+
+
+
+
+
+
+
 
           <div className="form-row mx-n3 pb-3">
             <div className="form-group select-box-arrow-icon-head  col-md-4 px-4">

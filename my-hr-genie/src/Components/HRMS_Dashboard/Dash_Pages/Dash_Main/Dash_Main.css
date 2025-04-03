@@ -139,7 +139,7 @@
   flex-direction: column;
   gap:10px;
   background: #fff;
-  padding: 15px  25px;
+  padding: 25px;
   border-radius: 3px;
 }
 
@@ -215,7 +215,7 @@
 }
 
 /* Popup Modal */
-.modal-overlay {
+.mp-active-add-new-task-modal-overlay{
   position: fixed;
   top: 0;
   left: 0;
@@ -228,26 +228,28 @@
   z-index: 1000;
 }
 
-.modal {
+.mp-active-add-new-task-modal {
   background: white;
-  padding: 20px;
-  width: 320px;
+  padding: 40px 20px;
+  width:500px;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease-in-out;
 }
 
-.modal-header {
+.mp-active-add-new-task-modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
-.modal-header h3 {
+.mp-active-add-new-task-modal-header h3 {
   margin: 0;
 }
 
-.close-btn {
+.mp-active-add-new-task-modal-header .close-btn {
   background: none;
   border: none;
   font-size: 18px;
@@ -255,45 +257,46 @@
   color: #999;
 }
 
-.close-btn:hover {
+.mp-active-add-new-task-modal-header .close-btn:hover {
   color: #333;
 }
 
 /* Input & Textarea */
-.modal input,
-.modal textarea {
+.mp-active-add-new-task-modal input,
+.mp-active-add-new-task-modal textarea {
   width: 100%;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 14px;
 }
 
-.modal textarea {
+.mp-active-add-new-task-modal textarea {
   height: 80px;
   resize: none;
 }
 
 /* Modal Buttons */
-.modal-actions {
+.mp-active-add-new-task-modal .modal-actions {
   display: flex;
   justify-content:end;
   margin-top: 15px;
 }
 
 .submit-btn {
-  background: #28a745;
-  color: white;
-  border: none;
-  padding: 10px 14px;
+  border: 1px solid #28a745;
+  color: #28a745;
+  background-color: transparent;
+  padding: 10px 24px;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .submit-btn:hover {
-  background: #218838;
+  background: #28a745;
+  color: white;
 }
 
 /* Animations */
@@ -307,6 +310,7 @@
     transform: scale(1);
   }
 }
+
 /* ======== Awaiting Approval =========== */
 .mp-caac-cts-aal-container{
   display: flex;
@@ -383,77 +387,5 @@
 }
 
 /*=============Events========= End ========= */
-
-/* Calendar with Date Picker =========Start=========*/
-.calendar-container {
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 8px;
-  background: #FAFAFA;
-}
-
-/* Header Styling */
-.custom-day-picker .rdp-caption {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-/* Chevron Icons */
-.rdp-chevron {
-  width: 18px !important;
-  height: 18px !important;
-}
-
-/* Month Navigation */
-.custom-day-picker .rdp-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Weekday Labels */
-.custom-day-picker .rdp-head {
-  font-weight: bold;
-  color: #666;
-}
-
-/* Day Cells */
-.custom-day-picker .rdp-day {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  padding: 0px !important;
-  transition: all 0.3s ease-in-out;
-  font-size: 14px;
-  border: 0.75px solid #d5d4df !important;
-}
-
-/* Selected Day with BLUE BOX */
-.custom-day-picker .rdp-day_selected {
-  background-color: #2A2A74 !important;
-  color: #ffffff !important;
-  font-weight: bold;
-  border-radius: 5px !important;
-  border: 2px solid #2A2A74; /* Blue Box Effect */
-}
-.rdp-selected .rdp-day_button {
-  border: none !important;
-  border-radius: 0px !important;
-  background-color: #2A2A74 !important;
-  color: #ffffff;
-}
-
-/* Hover Effect */
-.custom-day-picker .rdp-day:not(.rdp-day_selected):hover {
-  background-color: #e6f0ff;
-}
-
-/* Disabled Days */
-.custom-day-picker .rdp-day_disabled {
-  color: #ccc;
-}
-/* ======Calendar with Date Picker =========End=========*/
 
 
