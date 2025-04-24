@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './Dash_Sidebar.css';
+import '../Dash_Stylecss/Dash_Sidebar.css';
 import brandLogo from "../../../Assets/brandlogo.png";
 
 // Sidebar icons
@@ -28,8 +28,8 @@ const Dash_Sidebar = ({ setHeaderTitle }) => {
       title: "Employee On-Boarding",
       icon: <FaUsersCog />,
       submenu: [
-        { title: "Employee Record - Add", path: "/hrms/dashboard/EmployeeRecordAdd" },
-        { title: "Employee Record - Modify", path: "/employee/modify" },
+        { title: "Employee Record - Add", path: "/hrms/dashboard/employee-record-add" },
+        { title: "Employee Record - Modify", path: "/hrms/dashboard/employee-record-modify" },
         { title: "Employee On-boarding", path: "/employee/onboarding" },
         { title: "PF Account", path: "/employee/pf" },
         { title: "ESI Account", path: "/employee/pf" },

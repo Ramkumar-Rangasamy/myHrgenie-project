@@ -76,7 +76,7 @@ const EmployeeRecordEntry = () => {
 
   return (
     <div className="container-fluid w-100 h-100 p-0 m-0">
-      <div className="hrms-dash-emp-record-card-header">
+      <div className="hrms-dash-emp-All-components-titles-same-card-header">
         <h4>Employee Record Entry</h4>
       </div>
       <div className="hrms-dash-emp-record-card-body">
@@ -118,7 +118,7 @@ const EmployeeRecordEntry = () => {
           </div>
 
           <div className="text-center p-3">
-            <button type="submit" className="btn-save-record">Save Record</button>
+            <button type="submit" className="btn-save-button-all">Save Record</button>
           </div>
         </form>
       </div>  

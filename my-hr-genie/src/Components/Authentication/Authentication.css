@@ -90,20 +90,34 @@
   
     .background-overlay {
       bottom: 10%;
-      width: 90%;
+      width: 50%;
     }
   
     .background-overlay h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .hrms-authentication-css .col-md-6 {
       width: 100%;
-      padding: 15px 20px;
     }
   
-    .btn-signin-button {
-      width: 100%;
+   
+  }
+
+  @media (max-width:576px) {
+
+    .hrms-authentication-css{
+      margin: 20px;
+    }
+
+    .background-overlay {
+      bottom: 10%;
+      width: 80%;
+    }
+
+    .background-overlay h3 {
+      font-size: 1rem;
     }
   }
+  
   

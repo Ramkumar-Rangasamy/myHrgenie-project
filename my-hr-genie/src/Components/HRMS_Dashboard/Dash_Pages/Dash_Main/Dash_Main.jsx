@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Dash_Main.css";
+import "../../Dash_Stylecss/Dash_Main.css";
 
 import anysroll from "../../../../Assets/anyscroll.jpeg";
 

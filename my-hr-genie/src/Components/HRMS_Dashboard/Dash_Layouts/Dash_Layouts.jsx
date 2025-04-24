@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Dash_Layouts.css";
+import "../Dash_Stylecss/Dash_Layouts.css";
 import Dash_Sidebar from "../Dash_Sidebar/Dash_Sidebar";
 import { Outlet } from "react-router-dom";
 import Dash_Header from "../Dash_Header/Dash_Header";

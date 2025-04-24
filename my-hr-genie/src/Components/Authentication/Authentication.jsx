@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
 import './Authentication.css'
 import leftimage from '../../Assets/loginpageimage.png';
 import brandlogo from '../../Assets/brandlogo.png';
+
 const Authentication = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -32,7 +34,7 @@ const Authentication = () => {
 
 
             {/* Right Side Form */}
-            <div className="col-md-6  p-5 d-flex flex-column  justify-content-center">
+            <div className="col-md-6  p-lg-5 p-md-5 p-sm-5 d-flex flex-column  justify-content-center">
                 <div className="d-flex flex-column align-items-center justify-content-center" >
                     <img
                         src={brandlogo}
@@ -78,12 +80,13 @@ const Authentication = () => {
 
                     <div className="d-flex flex-column align-items-center justify-content-center mt-5" >
                       <button type="submit" className="btn-signin-button">Signin</button>
-                    </div> 
+                    </div>
+                    <h6 className="text-center m-5">Powered By myHRgenie</h6> 
                 </form>
             </div>
         </div>
         
-        <h6 className="text-center">Powered By myHRgenie</h6>
+       
     </div>
   );
 };
